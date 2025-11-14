@@ -1,0 +1,109 @@
+
+export const supplier = {
+  'shengda':'升大',
+  'lianguan':'联冠'
+}
+
+export const materialsData = [
+    {
+      code:'m1',
+      name:'60#珠光膜30#透明pet水胶',
+    },
+    {
+      code:'m2',
+      name:'60#珠光膜30#透明pet油胶',
+    },
+    {
+      code:'m3',
+      name:'50#BOPP30#透明pet水胶',
+    },
+    {
+      code:'m4',
+      name:'50#BOPP30#透明pet油胶',
+    },
+    {
+      code:'m8',
+      name:'75#合成纸30#透明pet水胶',
+    },
+
+]
+
+export const coverFilmData = [
+  {
+    code:'m9',
+    name:'水性光膜',
+  },
+  {
+    code:'m10',
+    name:'水性哑膜',
+  },
+]
+
+
+export const materialPriceData = [
+    {
+      materialCode:'m1',
+      supplier:'shengda',
+      price:'2.0'
+    },
+    {
+      materialCode:'m2',
+      supplier:'shengda',
+      price:'2.4'
+    },
+    {
+      materialCode:'m2',
+      supplier:'lianguan',
+      price:'2.5'
+    },
+    {
+      materialCode:'m3',
+      supplier:'shengda',
+      price:'2.1'
+    },
+    {
+      materialCode:'m4',
+      supplier:'shengda',
+      price:'2.4'
+    },
+    {
+      materialCode:'m8',
+      supplier:'shengda',
+      price:'2.1'
+    },
+    {
+      materialCode:'m3',
+      supplier:'lianguan',
+      price:'1.9'
+    },
+    {
+      materialCode:'m4',
+      supplier:'lianguan',
+      price:'2.2'
+    },
+    {
+      materialCode:'m7',
+      supplier:'lianguan',
+      price:'2.5'
+    },
+    {
+      materialCode:'m9',
+      supplier:'lianguan',
+      price:'0.38'
+    },
+    {
+      materialCode:'m10',
+      supplier:'lianguan',
+      price:'0.55'
+    },
+    {
+      materialCode:'m9',
+      supplier:'shengda',
+      price:'0.55'
+    },
+    {
+      materialCode:'m10',
+      supplier:'shengda',
+      price:'0.65'
+    },
+]
