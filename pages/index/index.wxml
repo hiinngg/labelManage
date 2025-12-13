@@ -1,3 +1,4 @@
 <view style="padding:20px;width:100%;box-sizing:border-box;">
   <t-button theme="primary" size="large" bindtap="handleQuoteTap" block>订单报价</t-button>
+  <t-button theme="primary" style="margin-top:15px;" size="large" bindtap="handleQuoteTap" block>信息登记</t-button>
 </view>

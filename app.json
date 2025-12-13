@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/quote/quote",
     "pages/index/index",
-    "pages/logs/logs"
-
+    "pages/quote/quote",
+    "pages/logs/logs",
+    "pages/shrinklabel",
+    "pages/shrinklabel/shrinklabel"
   ],
   "window": {
     "navigationBarTextStyle": "black",

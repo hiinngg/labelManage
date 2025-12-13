@@ -25,7 +25,11 @@ const genMaterialList=(data)=>{
 }
 
 //烫金暂定2元每平方
-const coverGoldPrice = 2.0
+const coverGoldPrice = 0.7
+
+const grossProfit = 0.4
+
+
 const errMsg = {
   '0001':'请选择材料',
   '0002':'请填写尺寸',
@@ -143,15 +147,13 @@ Page({
       }else{
         coverGoldArea = 0
       }
-      itemPrice = (parseFloat(this.data.quoteForm.material.price)+(element.isUvReverse?0.5:0)+parseFloat(element.fluctuation)+parseFloat(this.data.quoteForm.coverFilm.price||0))*parseFloat(itemArea)+parseFloat(coverGoldPrice)* parseFloat(coverGoldArea)
+      itemPrice = ((parseFloat(this.data.quoteForm.material.price)+(element.isUvReverse?0.5:0)+parseFloat(element.fluctuation)+parseFloat(this.data.quoteForm.coverFilm.price||0))*parseFloat(itemArea)+parseFloat(coverGoldPrice)* parseFloat(coverGoldArea))/(1 - grossProfit)
       totalPrice+=parseFloat(itemPrice)
       info.push({
         label:element,
-        width:itemWidth,
-        height:itemHeight,
-        itemArea,
-        coverGoldArea,
-        itemPrice
+        itemPrice,
+        
+
       })
     }
     console.log(info,totalPrice,'infoooooooooo')
